@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DeathScript : MonoBehaviour
 {
+    public Transform[] spawnTransforms;
+    
     private void Start()
     {
         // Asegúrate de que el objeto tenga un Collider
@@ -23,4 +25,5 @@ public class DeathScript : MonoBehaviour
             Debug.Log("¡Enemigo destruido por el proyectil!");
         }
     }
+   
 }

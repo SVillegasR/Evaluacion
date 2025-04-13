@@ -17,9 +17,12 @@ public class Enemy : MonoBehaviour
     private Transform proyectilDetectado;     // El proyectil que se detecta
     private Vector3 direccionDeEsquive;      // Dirección de esquive
     private Vector3 direction;               // Dirección del jugador
+   
 
+    
     void Start()
     {
+        
         // Obtener el Rigidbody y asegurarse de que no se vea afectado por la gravedad
         eRb = GetComponent<Rigidbody>();
         if (eRb != null)
